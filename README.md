@@ -5,4 +5,3 @@
 <ul>
 
 <h2>Images :</h2>
-![Alt text](./images/ss1.png "image 1")
