@@ -1,5 +1,8 @@
 <h1> This is a project to Learn about the MERN Stack </h1>
 <ul>
-<li><h3> Note : .env must be configured in the root directory with MONGO_URI and PORT eg MONGO_URI= mongodb+srv://{username>}:{password}@.... PORT=9999</h2></li>
-<li><h3> Moreover the Port and URL is also defined in frontend/store and backend/server.js and in case of change in port number or host </h2></li>
+<li><h4> Note : .env must be configured in the root directory with MONGO_URI and PORT eg MONGO_URI= mongodb+srv://{username>}:{password}@.... PORT=9999</h4></li>
+<li><h4> Moreover the Port and URL is also defined in frontend/store and backend/server.js and in case of change in port number or host </h4></li>
 <ul>
+
+<h2>Images :</h2>
+![image](https://github.com/user-attachments/assets/dd565e93-0208-4cbe-a4df-f980286c296d)
