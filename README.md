@@ -5,4 +5,4 @@
 <ul>
 
 <h2>Images :</h2>
-![image-1](./images/ss1.png)
+![Alt text](./images/ss1.png "image 1")
