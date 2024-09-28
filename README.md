@@ -5,8 +5,4 @@
 <ul>
 
 <h2>Images :</h2>
-<<<<<<< HEAD
 ![image-1](./images/ss1.png)
-=======
-
->>>>>>> ea7d7883c21e695cda5866b0e7d2b09ebfe1bfb0
