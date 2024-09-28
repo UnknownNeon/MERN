@@ -5,4 +5,4 @@
 <ul>
 
 <h2>Images :</h2>
-![image](images/ss1.png)
+![screenshot](images/ss1.png)
