@@ -45,7 +45,25 @@ export const ItemCard = ({item}) => {
     }
     const {updateItem} = useItemStore();
     const handleUpdate = async (pid, updatedItem) => {
-        updateItem(pid,updatedItem);
+        const {success , message} = await  updateItem(pid,updatedItem);
+        if(success){
+            toast({
+                title: success,
+                description: message,
+                status: 'success',
+                duration: 3000,
+                isClosable: true,
+              })
+        }
+        else{
+            toast({
+                title: success,
+                description: message,
+                status: 'error',
+                duration: 3000,
+                isClosable: true,
+              })
+        }
         onClose();
     }
   return (

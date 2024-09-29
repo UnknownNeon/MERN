@@ -54,5 +54,6 @@ export const useItemStore = create((set)=>({
         set(state => ({
             items: state.items.map(item => item._id === pid ? data.data : item)
         }))
+            return { success: true , message:"Updated Successfully"}
     }
 }));
