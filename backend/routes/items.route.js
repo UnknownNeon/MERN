@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/" , async (request , response )=> {
     const item = request.body;
-    if(!item.name || !item.severity || !item.status || !item.image ){
+    if(!item.name || !item.severity || !item.status){
         return response.status(400).json({
             success : false,
             message : "provide all fieds" ,

@@ -1,14 +1,8 @@
-import { Box, Button, Container, Heading, Input, useColorModeValue, VStack } from '@chakra-ui/react'
+import {Box, Button, Container, Heading, Input, useColorModeValue, VStack} from '@chakra-ui/react'
 import React, { useState } from 'react'
 import {useItemStore} from "../store/items"
-import { useToast } from '@chakra-ui/react'
-import {
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
-} from '@chakra-ui/react'
+import {useToast} from '@chakra-ui/react'
+import {NumberInput,NumberInputField,NumberInputStepper,NumberIncrementStepper,NumberDecrementStepper} from '@chakra-ui/react'
 
 const CreatePage = () => {
   //State Variable i.e Hook 
@@ -17,7 +11,8 @@ const CreatePage = () => {
     name : "",
     severity : 1,
     image : "",
-    status : "Incomplete"
+    status : "Incomplete",
+    description : ""
   })
 
   const { createItem } = useItemStore();
@@ -83,6 +78,12 @@ const CreatePage = () => {
             name='image'
             value={newItem.image}
             onChange={(e)=> setNewItem({...newItem , image: e.target.value})}
+            />
+            <Input
+            placeholder='Description'
+            name='description'
+            value={newItem.description}
+            onChange={(e)=> setNewItem({...newItem , description: e.target.value})}
             />
             <Button colorScheme='blue' onClick={handleItemAdd} w={"full"}>
               Add Item

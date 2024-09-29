@@ -2,6 +2,7 @@ import { Button, Container, Flex, HStack, Text, useColorMode } from '@chakra-ui/
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { CiSquarePlus } from "react-icons/ci";
+import { AiOutlineFileDone } from "react-icons/ai";
 
 const Navbar = () => {
   //This is a Hook from ChakraUI
@@ -21,6 +22,11 @@ const Navbar = () => {
 
           <HStack spacing={"2"}
           alignItems={"center"}>
+            <Link to={"/done"}>
+            <Button>
+            <AiOutlineFileDone />
+            </Button>
+            </Link>
             <Link to={"/create"}>
               <Button>
               <CiSquarePlus fontSize={20} />

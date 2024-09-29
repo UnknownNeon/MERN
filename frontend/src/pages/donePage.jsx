@@ -4,19 +4,22 @@ import React, { useEffect } from 'react'
 import { useItemStore } from '../store/items'
 import {ItemCard } from '../components/ItemCard'
 
-const HomePage = () => {
-  const { fetchItems, items } = useItemStore();
-  useEffect(()=>{
-    fetchItems();
-  },[fetchItems]);
+const DonePage = () => {
 
+
+    const { fetchItems, items } = useItemStore();
+    useEffect(()=>{
+      fetchItems();
+    },[fetchItems]);
+
+    
   return (
     <Container maxW='container.xl' py={12}>
       <VStack spacing={8}>
         <Text fontSize={"30"}
               fontWeight={"bold"}
               textAlign={"center"}>
-          Current Notes 📒
+          Completed Notes 📒
          </Text>
 
         <SimpleGrid column={1}
@@ -24,7 +27,8 @@ const HomePage = () => {
         w={"full"}
         >
           {items.map((item) => (
-            (item.status === "Incomplete" && <ItemCard key={item._id} item={item} />)
+            ( item.status === "Complete" &&
+            <ItemCard key={item._id} item={item} />)
           ))}
         </SimpleGrid>
       </VStack>
@@ -39,4 +43,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default DonePage
