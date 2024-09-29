@@ -1,6 +1,6 @@
 <h1> How to Run </h1>
-In directory frontend : npm run dev
-In directory backend  :  npm run server
+<p>In directory frontend : npm run dev </p>
+<p>In directory backend  :  npm run server</p>
 <h1> This is a project to Learn about the MERN Stack </h1>
 <ul>
 <li><h4> Note : .env must be configured in the root directory with MONGO_URI and PORT eg MONGO_URI= mongodb+srv://{username>}:{password}@.... PORT=9999</h4></li>
